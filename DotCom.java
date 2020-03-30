@@ -6,32 +6,32 @@ public class DotCom {
 	private String name;
 	
 	
-	// Проверка координат
+	// ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨║╨╛╨╛╤А╨┤╨╕╨╜╨░╤В
 	public String checkYourself(String userInput) {
-		String result = "Мимо";
+		String result = "╨Ь╨╕╨╝╨╛";
 		int index = locationCells.indexOf(userInput);
 		
 		if (index >= 0) {
 			locationCells.remove(index);
 			
 			if (locationCells.isEmpty()) {
-				result = "Потопил";
-				System.out.println("Ой, вы потопили " + name + " :(");
+				result = "╨Я╨╛╤В╨╛╨┐╨╕╨╗";
+				System.out.println("╨Ю╨╣, ╨▓╤Л ╨┐╨╛╤В╨╛╨┐╨╕╨╗╨╕ " + name + " :(");
 			} else {
-				result = "Попал";
+				result = "╨Я╨╛╨┐╨░╨╗";
 			}
 		}
 		return result;
 	}
 	
 	
-	// Геттер
+	// ╨У╨╡╤В╤В╨╡╤А
 	public ArrayList<String> getLocationCells () {
 		return this.locationCells;
 	}
 	
 	
-	// Сеттер 
+	// ╨б╨╡╤В╤В╨╡╤А 
 	public void setLocationCells(ArrayList<String> newLocationCells) {
 		locationCells = newLocationCells;
 	}

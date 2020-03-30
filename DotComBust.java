@@ -2,20 +2,20 @@ import java.util.ArrayList;
 
 public class DotComBust {
 	
-	// Количество догадок
+	// ╨Ъ╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╨┤╨╛╨│╨░╨┤╨╛╨║
 	int numOfGuesses = 0;
 	
-	// Приём пользовательского ввода и подбор расположения корабликов
+	// ╨Я╤А╨╕╤С╨╝ ╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╨╡╨╗╤М╤Б╨║╨╛╨│╨╛ ╨▓╨▓╨╛╨┤╨░ ╨╕ ╨┐╨╛╨┤╨▒╨╛╤А ╤А╨░╤Б╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╤П ╨║╨╛╤А╨░╨▒╨╗╨╕╨║╨╛╨▓
 	GameHelper helper = new GameHelper();
 	
-	// Коллекция кораблей для потопления
+	// ╨Ъ╨╛╨╗╨╗╨╡╨║╤Ж╨╕╤П ╨║╨╛╤А╨░╨▒╨╗╨╡╨╣ ╨┤╨╗╤П ╨┐╨╛╤В╨╛╨┐╨╗╨╡╨╜╨╕╤П
 	ArrayList<DotCom> dotComList = new ArrayList<DotCom>();
 	
 	
-	// Статическая функция, вызываемая без создания объекта текущего класса
+	// ╨б╤В╨░╤В╨╕╤З╨╡╤Б╨║╨░╤П ╤Д╤Г╨╜╨║╤Ж╨╕╤П, ╨▓╤Л╨╖╤Л╨▓╨░╨╡╨╝╨░╤П ╨▒╨╡╨╖ ╤Б╨╛╨╖╨┤╨░╨╜╨╕╤П ╨╛╨▒╤К╨╡╨║╤В╨░ ╤В╨╡╨║╤Г╤Й╨╡╨│╨╛ ╨║╨╗╨░╤Б╤Б╨░
 	public static void main (String[] args) {
 		
-		// Тестирование
+		// ╨в╨╡╤Б╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡
 		/*
 		if (DotComBust.setUpGameTest() == true) System.out.println("Method setUpGame is OK");
 		else System.out.println("Method setUpGame is WRONG");
@@ -39,9 +39,9 @@ public class DotComBust {
 	}
 	
 	
-	// Создает 3 объекта DotCom и назначает им имена. Выводит инструкцию
+	// ╨б╨╛╨╖╨┤╨░╨╡╤В 3 ╨╛╨▒╤К╨╡╨║╤В╨░ DotCom ╨╕ ╨╜╨░╨╖╨╜╨░╤З╨░╨╡╤В ╨╕╨╝ ╨╕╨╝╨╡╨╜╨░. ╨Т╤Л╨▓╨╛╨┤╨╕╤В ╨╕╨╜╤Б╤В╤А╤Г╨║╤Ж╨╕╤О
 	private void setUpGame() {
-		// Создание "сайтов"
+		// ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "╤Б╨░╨╣╤В╨╛╨▓"
 		DotCom one = new DotCom();
 		one.setName("Pets.com");
 		DotCom two = new DotCom();
@@ -52,9 +52,9 @@ public class DotComBust {
 		dotComList.add(two);
 		dotComList.add(three);
 		
-		System.out.println("Ваша цель - потопить три \"сайта\".");
+		System.out.println("╨Т╨░╤И╨░ ╤Ж╨╡╨╗╤М - ╨┐╨╛╤В╨╛╨┐╨╕╤В╤М ╤В╤А╨╕ \"╤Б╨░╨╣╤В╨░\".");
 		System.out.println("Pets.com, eToys.com, Go2.com");
-		System.out.println("Попытайтесь сделать это за минимальное количество ходов");
+		System.out.println("╨Я╨╛╨┐╤Л╤В╨░╨╣╤В╨╡╤Б╤М ╤Б╨┤╨╡╨╗╨░╤В╤М ╤Н╤В╨╛ ╨╖╨░ ╨╝╨╕╨╜╨╕╨╝╨░╨╗╤М╨╜╨╛╨╡ ╨║╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╤Е╨╛╨┤╨╛╨▓");
 		
 		for (DotCom dotComToSet : dotComList) {
 			ArrayList<String> newLocation = helper.placeDotCom(3);
@@ -63,28 +63,28 @@ public class DotComBust {
 	}
 	
 	
-	// Приём и проверка ввода пользователя пока все корабли не будут потоплены
+	// ╨Я╤А╨╕╤С╨╝ ╨╕ ╨┐╤А╨╛╨▓╨╡╤А╨║╨░ ╨▓╨▓╨╛╨┤╨░ ╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╨╡╨╗╤П ╨┐╨╛╨║╨░ ╨▓╤Б╨╡ ╨║╨╛╤А╨░╨▒╨╗╨╕ ╨╜╨╡ ╨▒╤Г╨┤╤Г╤В ╨┐╨╛╤В╨╛╨┐╨╗╨╡╨╜╤Л
 	private void startPlaying() {
 		while (!dotComList.isEmpty()) {
-			String userGuess = helper.getUserInput("Сделайте ход");
+			String userGuess = helper.getUserInput("╨б╨┤╨╡╨╗╨░╨╣╤В╨╡ ╤Е╨╛╨┤");
 			checkUserGuess(userGuess);
 		}
 		finishGame();
 	}
 	
 	
-	// Проверка координат на попадание
+	// ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨║╨╛╨╛╤А╨┤╨╕╨╜╨░╤В ╨╜╨░ ╨┐╨╛╨┐╨░╨┤╨░╨╜╨╕╨╡
 	private boolean checkUserGuess(String userGuess) {
 		numOfGuesses++;
 		
-		String result = "Мимо";
+		String result = "╨Ь╨╕╨╝╨╛";
 		
 		for (DotCom dotComToTest : dotComList) {
 			result = dotComToTest.checkYourself(userGuess);
-			if (result.equals("Попал")) {
+			if (result.equals("╨Я╨╛╨┐╨░╨╗")) {
 				break;
 			}
-			if (result.equals("Потопил")) {
+			if (result.equals("╨Я╨╛╤В╨╛╨┐╨╕╨╗")) {
 				dotComList.remove(dotComToTest);
 				break;
 			}
@@ -92,31 +92,31 @@ public class DotComBust {
 		System.out.println(result);
 		
 		//for testing
-		if (result.equals("Попал") || result.equals("Потопил")) return true;
+		if (result.equals("╨Я╨╛╨┐╨░╨╗") || result.equals("╨Я╨╛╤В╨╛╨┐╨╕╨╗")) return true;
 		else return false;
 	}
 	
 	
-	// Сообщение о конце игры и вывод статистики
+	// ╨б╨╛╨╛╨▒╤Й╨╡╨╜╨╕╨╡ ╨╛ ╨║╨╛╨╜╤Ж╨╡ ╨╕╨│╤А╤Л ╨╕ ╨▓╤Л╨▓╨╛╨┤ ╤Б╤В╨░╤В╨╕╤Б╤В╨╕╨║╨╕
 	private void finishGame() {
-		System.out.println("Все \"сайты\" ушли ко дну! Ваши акции теперь ничего не стоят!");
+		System.out.println("╨Т╤Б╨╡ \"╤Б╨░╨╣╤В╤Л\" ╤Г╤И╨╗╨╕ ╨║╨╛ ╨┤╨╜╤Г! ╨Т╨░╤И╨╕ ╨░╨║╤Ж╨╕╨╕ ╤В╨╡╨┐╨╡╤А╤М ╨╜╨╕╤З╨╡╨│╨╛ ╨╜╨╡ ╤Б╤В╨╛╤П╤В!");
 		if (numOfGuesses <= 18) {
-			System.out.println("Это заняло у вас всего " + numOfGuesses + " попыткок.");
-			System.out.println("Вы успели выбраться до того, как ваши вложения утонули.");
+			System.out.println("╨н╤В╨╛ ╨╖╨░╨╜╤П╨╗╨╛ ╤Г ╨▓╨░╤Б ╨▓╤Б╨╡╨│╨╛ " + numOfGuesses + " ╨┐╨╛╨┐╤Л╤В╨║╨╛╨║.");
+			System.out.println("╨Т╤Л ╤Г╤Б╨┐╨╡╨╗╨╕ ╨▓╤Л╨▒╤А╨░╤В╤М╤Б╤П ╨┤╨╛ ╤В╨╛╨│╨╛, ╨║╨░╨║ ╨▓╨░╤И╨╕ ╨▓╨╗╨╛╨╢╨╡╨╜╨╕╤П ╤Г╤В╨╛╨╜╤Г╨╗╨╕.");
 		} else {
-			System.out.println("Это заняло у вас довольно много времени. " + numOfGuesses + "попыткок.");
-			System.out.println("Рыбы водят хороводы вокруг ваших вложений.");
+			System.out.println("╨н╤В╨╛ ╨╖╨░╨╜╤П╨╗╨╛ ╤Г ╨▓╨░╤Б ╨┤╨╛╨▓╨╛╨╗╤М╨╜╨╛ ╨╝╨╜╨╛╨│╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕. " + numOfGuesses + "╨┐╨╛╨┐╤Л╤В╨║╨╛╨║.");
+			System.out.println("╨а╤Л╨▒╤Л ╨▓╨╛╨┤╤П╤В ╤Е╨╛╤А╨╛╨▓╨╛╨┤╤Л ╨▓╨╛╨║╤А╤Г╨│ ╨▓╨░╤И╨╕╤Е ╨▓╨╗╨╛╨╢╨╡╨╜╨╕╨╣.");
 		}
 	}
 	
 	
-	// Геттер
+	// ╨У╨╡╤В╤В╨╡╤А
 	public ArrayList<DotCom> getDots() {
 		return this.dotComList;
 	}
 	
 	
-	// Тест 1
+	// ╨в╨╡╤Б╤В 1
 	private static boolean setUpGameTest() {
 		System.out.println("Test #1");
 		DotComBust dotComBust = new DotComBust();
@@ -129,15 +129,15 @@ public class DotComBust {
 	}
 	
 	
-	// Тест 2
+	// ╨в╨╡╤Б╤В 2
 	private static boolean checkUserGuessTest() {
 		System.out.println("Test #2");
 		
-		// Создание игры и генерация кораблей
+		// ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨╕╨│╤А╤Л ╨╕ ╨│╨╡╨╜╨╡╤А╨░╤Ж╨╕╤П ╨║╨╛╤А╨░╨▒╨╗╨╡╨╣
 		DotComBust dotComBust = new DotComBust();
 		dotComBust.setUpGame();
 		
-		// Получение списка кораблей этой игры
+		// ╨Я╨╛╨╗╤Г╤З╨╡╨╜╨╕╨╡ ╤Б╨┐╨╕╤Б╨║╨░ ╨║╨╛╤А╨░╨▒╨╗╨╡╨╣ ╤Н╤В╨╛╨╣ ╨╕╨│╤А╤Л
 		ArrayList<DotCom> dotComListTest = dotComBust.getDots();
 		
 		char[] field1 = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
@@ -145,20 +145,20 @@ public class DotComBust {
 		
 		for (char value1 : field1) {
 			for (char value2 : field2) {
-				// Формируем итоговую догадку
+				// ╨д╨╛╤А╨╝╨╕╤А╤Г╨╡╨╝ ╨╕╤В╨╛╨│╨╛╨▓╤Г╤О ╨┤╨╛╨│╨░╨┤╨║╤Г
 				String guess = String.valueOf(value1 + value2);
 				
-				// Получаем ответ от функции
+				// ╨Я╨╛╨╗╤Г╤З╨░╨╡╨╝ ╨╛╤В╨▓╨╡╤В ╨╛╤В ╤Д╤Г╨╜╨║╤Ж╨╕╨╕
 				boolean testMethodAnswer = dotComBust.checkUserGuess(guess);
 				
-				// Проверка работы функции путем поиска таких координат в объектах DotCom
+				// ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╤А╨░╨▒╨╛╤В╤Л ╤Д╤Г╨╜╨║╤Ж╨╕╨╕ ╨┐╤Г╤В╨╡╨╝ ╨┐╨╛╨╕╤Б╨║╨░ ╤В╨░╨║╨╕╤Е ╨║╨╛╨╛╤А╨┤╨╕╨╜╨░╤В ╨▓ ╨╛╨▒╤К╨╡╨║╤В╨░╤Е DotCom
 				boolean answerFromTest = false;
 				
-				// Проверка каждого корабля
+				// ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨║╨░╨╢╨┤╨╛╨│╨╛ ╨║╨╛╤А╨░╨▒╨╗╤П
 				for (DotCom dot : dotComListTest) {
 					ArrayList<String> dotsLocation = dot.getLocationCells();
 					
-					// Проверка каждой клетки корабля
+					// ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨║╨░╨╢╨┤╨╛╨╣ ╨║╨╗╨╡╤В╨║╨╕ ╨║╨╛╤А╨░╨▒╨╗╤П
 					for (String cell : dotsLocation) {
 						if (cell == guess) answerFromTest = true;
 						break;
@@ -167,7 +167,7 @@ public class DotComBust {
 					if (answerFromTest == true) break;
 				}
 				
-				// Если хоть одна клетка не совпадает - функция работает неправильно
+				// ╨Х╤Б╨╗╨╕ ╤Е╨╛╤В╤М ╨╛╨┤╨╜╨░ ╨║╨╗╨╡╤В╨║╨░ ╨╜╨╡ ╤Б╨╛╨▓╨┐╨░╨┤╨░╨╡╤В - ╤Д╤Г╨╜╨║╤Ж╨╕╤П ╤А╨░╨▒╨╛╤В╨░╨╡╤В ╨╜╨╡╨┐╤А╨░╨▓╨╕╨╗╤М╨╜╨╛
 				if (testMethodAnswer != answerFromTest) return false;
 			}
 		}
@@ -176,17 +176,17 @@ public class DotComBust {
 	}
 
 
-	// Тест 2.5
+	// ╨в╨╡╤Б╤В 2.5
 	private static boolean checkUserGuessTestBySetCells() {
 		System.out.println("Test #2.5");
-		// Создание игры и генерация кораблей
+		// ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨╕╨│╤А╤Л ╨╕ ╨│╨╡╨╜╨╡╤А╨░╤Ж╨╕╤П ╨║╨╛╤А╨░╨▒╨╗╨╡╨╣
 		DotComBust dotComBust = new DotComBust();
 		dotComBust.setUpGame();
 		
-		// Получение списка кораблей этой игры
+		// ╨Я╨╛╨╗╤Г╤З╨╡╨╜╨╕╨╡ ╤Б╨┐╨╕╤Б╨║╨░ ╨║╨╛╤А╨░╨▒╨╗╨╡╨╣ ╤Н╤В╨╛╨╣ ╨╕╨│╤А╤Л
 		ArrayList<DotCom> dotComListTest = dotComBust.getDots();
 		
-		// Список новых координат корабля
+		// ╨б╨┐╨╕╤Б╨╛╨║ ╨╜╨╛╨▓╤Л╤Е ╨║╨╛╨╛╤А╨┤╨╕╨╜╨░╤В ╨║╨╛╤А╨░╨▒╨╗╤П
 		ArrayList<String> newLocations1 = new ArrayList<String>();
 		newLocations1.add("A1");
 		newLocations1.add("A2");
@@ -205,12 +205,12 @@ public class DotComBust {
 		newLocations3.add("C3");
 		String[] input3 = {"C1", "C2", "C3"};
 		
-		// Установка новых координат
+		// ╨г╤Б╤В╨░╨╜╨╛╨▓╨║╨░ ╨╜╨╛╨▓╤Л╤Е ╨║╨╛╨╛╤А╨┤╨╕╨╜╨░╤В
 		dotComListTest.get(0).setLocationCells(newLocations1);
 		dotComListTest.get(1).setLocationCells(newLocations2);
 		dotComListTest.get(2).setLocationCells(newLocations3);
 		
-		// Проверка интересующей функции
+		// ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨╕╨╜╤В╨╡╤А╨╡╤Б╤Г╤О╤Й╨╡╨╣ ╤Д╤Г╨╜╨║╤Ж╨╕╨╕
 		for (String guess : input1) {
 			if (dotComBust.checkUserGuess(guess) == false) return false;
 		}

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-// Класс предназначенный для получения  обработки ввода пользователя
+// ╨Ъ╨╗╨░╤Б╤Б ╨┐╤А╨╡╨┤╨╜╨░╨╖╨╜╨░╤З╨╡╨╜╨╜╤Л╨╣ ╨┤╨╗╤П ╨┐╨╛╨╗╤Г╤З╨╡╨╜╨╕╤П  ╨╛╨▒╤А╨░╨▒╨╛╤В╨║╨╕ ╨▓╨▓╨╛╨┤╨░ ╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╨╡╨╗╤П
 public class GameHelper {
 	
 	private static final String alphabet = "abcdefg";
@@ -27,7 +27,7 @@ public class GameHelper {
 	}
 	
 	
-	// Генерация координат для корабля
+	// ╨У╨╡╨╜╨╡╤А╨░╤Ж╨╕╤П ╨║╨╛╨╛╤А╨┤╨╕╨╜╨░╤В ╨┤╨╗╤П ╨║╨╛╤А╨░╨▒╨╗╤П
 	public ArrayList<String> placeDotCom(int comSize) {
 		//System.out.println("\nGameHelper.placeDotCom() called");
 		
@@ -47,7 +47,7 @@ public class GameHelper {
 		
 		while (!success & attempt++ < 200) {
 			location = (int) (Math.random() * gridSize);
-			//System.out.println("\tпробуем " + location);
+			//System.out.println("\t╨┐╤А╨╛╨▒╤Г╨╡╨╝ " + location);
 			int x = 0;
 			success = true;
 			while (success && x < comSize) {
@@ -62,7 +62,7 @@ public class GameHelper {
 						success = false;
 					}
 				} else {
-					//System.out.println("используется" + location);
+					//System.out.println("╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П" + location);
 					success = false;
 				}
 			}
